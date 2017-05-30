@@ -1,0 +1,35 @@
+{
+  "name": "linkedin-json-resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist",
+    "serve": "node dist/index.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuajharris/linkedin-json-resume.git"
+  },
+  "author": "Joshua Harris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshuajharris/linkedin-json-resume/issues"
+  },
+  "homepage": "https://github.com/joshuajharris/linkedin-json-resume#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "mocha": "^3.4.2"
+  }
+}
